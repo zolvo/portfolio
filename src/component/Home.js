@@ -71,7 +71,7 @@ const Background01 = styled.div`
 
 const Main = styled.div`
   display: flex;
-  width: 67vw;
+  width: 58vw;
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1 1 auto;

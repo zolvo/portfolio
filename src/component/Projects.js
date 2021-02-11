@@ -66,6 +66,10 @@ const Containers = styled.div`
   height: 12em;
   // position: relative;
   margin-left: 9em;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content; flex-end;
+  align-items: flex-end;
 
   .chart {
     box-sizing: border-box;
@@ -73,24 +77,30 @@ const Containers = styled.div`
     // margin-top: 2em;
     width: 20em;
     height: 12em;
-    background-color: #3fa7d5;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.8) 75%,
+      rgba(128, 128, 128, 0.5)
+    );
     clip-path: circle(30% at 100% 50%);
     -webkit-clip-path: circle(30% at100% 50%);
     outline: none;
     border: none;
   }
-
 `;
 
+const List = styled.div`
+  li {
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    width: 5em;
+    height: 5em;
+    transition: 0.7s;
 
-  const List = styled.div`
-    li {
-      z-index:2;
-      position:relative;
-      background-color: white;
-      width: 5em;
-      height: 5em;
-      transition: 0.7s;
-    }
-  `;
+    // list-style: none;
+    // outline：none;
+    // border: none;
+  }
+`;
 export default Projects;

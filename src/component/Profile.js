@@ -8,7 +8,8 @@ function Profile() {
         <div className="title">
           Ronald Regan <span>Palisuan</span>
         </div>
-        <div className="middle">I'm</div>
+        <div className="subtitle">こんにちは、　ロナルドです、よろしく～</div>
+        <div className="middle">Web Developer, Full Stack & Front End, Manga & Game Addict, Ramen Lover</div>
       </div>
     </Container>
   );
@@ -21,7 +22,7 @@ const Container = styled.div`
     box-sizing: border-box;
     // border: 1px solid white;
     width: 18em;
-    height: 15em;
+    height: 14em;
   }
 
   .title {
@@ -33,9 +34,17 @@ const Container = styled.div`
     }
   }
 
-  .middle {
+  .subtitle {
     margin-top: 1em;
-    font-size: 25px;
+    font-weight: lighter;
+    font-size: 9px;
+    letter-spacing: 2.5px;
+  }
+
+  .middle {
+    margin-top: 3em;
+    letter-spacing: 2px;
+    font-size: 20px;
   }
 `;
 

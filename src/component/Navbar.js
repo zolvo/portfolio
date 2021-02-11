@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import R02 from "../asset/R02.png";
+import logo from "../asset/logo.png";
 
 function Menu() {
   return (
     <Container>
       <div>
         <a href="/">
-          <img src={R02} alt="logo" className="logo" />
+          <img src={logo} alt="logo" className="logo" />
         </a>
       </div>
       <div>project</div>
@@ -27,11 +27,11 @@ const Container = styled.div`
 
   .logo {
     background-color: white;
-    height: 2em;
+    height: 2.5em;
 
     :hover {
       margin-top: 8px;
-      height: 2.3em;
+      height: 3em;
       transition: 0.5s;
       background-color: magenta;
     }

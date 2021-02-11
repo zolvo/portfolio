@@ -30,6 +30,8 @@ function LogoBig() {
 
 const Container = styled.div`
   transform-style: preserve-3d;
+  position: absolute;
+  margin-top: 23em;
 
   .logoBig {
     margin-top: 0.5em;
@@ -43,18 +45,18 @@ const Container = styled.div`
     width: 10em;
     object-fit: cover;
     position: absolute;
-    z-index: -1;
+    z-index: -99;
   }
 
   .inner-element {
     height: 11em;
     width: 11em;
     margin: -2px;
-    z-index: 1;
-    background-image: url(${R08});
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    z-index: -98;
+    // background-image: url(${R08});
+    // background-position: center;
+    // background-size: cover;
+    // background-repeat: no-repeat;
   }
 `;
 

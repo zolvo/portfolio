@@ -1,8 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import Projects from "./Projects";
 import LogoBig from "./LogoBig";
-import Menu from "./Menu";
+import Menu from "./Navbar";
 import Profile from "./Profile";
 
 function Home() {
@@ -10,12 +10,12 @@ function Home() {
     <Container>
       <Background00>
         <Background01>
-            <Menu />
+          <Menu />
           <Main>
             <Profile />
             <Projects />
           </Main>
-          <LogoBig />
+            <LogoBig />
         </Background01>
       </Background00>
     </Container>
@@ -28,6 +28,12 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+    background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(128, 128, 128, 0.5),
+    rgba(0, 0, 0, 0.8)
+    );
 `;
 
 const Background00 = styled.div`
@@ -39,6 +45,7 @@ const Background00 = styled.div`
   width: 75vw;
   background-image: linear-gradient(
     to right,
+    // rgba(0, 0, 0, 0.8),
     rgba(128, 128, 128, 0.5),
     rgba(0, 0, 0, 0.8)
   );
@@ -46,7 +53,7 @@ const Background00 = styled.div`
 
 const Background01 = styled.div`
   box-sizing: border-box;
-  position: relative;
+  // position: relative;
   background-image: linear-gradient(
     90deg,
     rgba(0, 0, 0, 1) 25%,
@@ -60,19 +67,15 @@ const Background01 = styled.div`
   width: 100vw;
   border-radius: 1em;
   box-shadow: 2px 2px 8px 6px rgba(0, 0, 0, 0.2);
-
-  .default-component {
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-  }
 `;
 
 const Main = styled.div`
   display: flex;
-  flex-direction
+  width: 67vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  // margin: 0 15em;
 `;
 
 export default Home;

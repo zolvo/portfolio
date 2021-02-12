@@ -30,13 +30,14 @@ function LogoBig() {
 
 const Container = styled.div`
   transform-style: preserve-3d;
-  position: absolute;
-  margin-top: 23em;
+  // margin: 0 3em;
+  // position: absolute;
+  // margin-top: 23em;
 
   .logoBig {
-    margin-top: 0.5em;
+    // margin-top: -2.5em;
     width: 11em;
-    margin-left: 1.5em;
+    margin-left: -1.5em;
     transition: 2s;
   }
 

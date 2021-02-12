@@ -62,10 +62,10 @@ const Containers = styled.div`
   box-sizing: border-box;
   // border: 1px solid white;
   // left: 6em;
-  width: 20em;
+  width: 19em;
   height: 12em;
   // position: relative;
-  margin-left: 9em;
+  // margin-left: 9em;
   display:flex;
   flex-wrap:wrap;
   justify-content; flex-end;

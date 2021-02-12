@@ -95,9 +95,9 @@ const Container = styled.div`
 
     :hover .dropdown-content {
       display: block;
-      transition-delay: 0.2s;
       position: absolute;
     }
+
 
     :hover .dropdown-content li:nth-child(1) {
       animation: github 0.1s linear 1 forwards;

@@ -72,6 +72,8 @@ const Card = styled.div`
 `;
 
 const Main = styled.div`
+  box-sizing: border-box;
+  // border: 1px solid white;
   display: flex;
   width: 63vw;
   flex-direction: row;

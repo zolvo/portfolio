@@ -76,6 +76,8 @@ const Container = styled.div`
     background-color: white;
     height: 2.5em;
     cursor: pointer;
+    transition: 0.5s;
+
 
     :hover {
       margin-top: 8px;
@@ -160,6 +162,8 @@ const Container = styled.div`
     }
   }
 
+
+
   .dropdown-content {
     display: none;
     list-style: none;
@@ -194,7 +198,8 @@ const Container = styled.div`
     border: none;
     outline: none;
     background-color: transparent;
+    border-readius: 50%;
   }
-`;
+  `;
 
 export default Menu;

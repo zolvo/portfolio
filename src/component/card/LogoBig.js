@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Tilt from "react-parallax-tilt";
-import fluid from "../video/fluid.mp4";
-import R08 from "../asset/R08.png";
+import fluid from "../../video/fluid.mp4";
+import R08 from "../../asset/R08.png";
 
 function LogoBig() {
   return (
@@ -12,7 +12,7 @@ function LogoBig() {
         scale={1.15}
         perspective={500}
         transitionSpeed={3500}
-        className="logoBig"
+        className="logoR"
       >
         <video autoPlay loop muted className="video">
           <source src={fluid} type="video/mp4" />
@@ -22,7 +22,7 @@ function LogoBig() {
           <div>Ronald Regan Palisuan です</div>
           <div>よろしくね～</div>
         </div> */}
-        <img src={R08} className="inner-element" />
+        <img src={R08} alt='logoR' className="inner-element" />
       </Tilt>
     </Container>
   );
@@ -34,7 +34,7 @@ const Container = styled.div`
   // position: absolute;
   // margin-top: 23em;
 
-  .logoBig {
+  .logoR {
     // margin-top: -2.5em;
     width: 11em;
     margin-left: -1.5em;

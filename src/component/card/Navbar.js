@@ -1,12 +1,20 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../asset/logo.png";
+import logo from "../../asset/logo.png";
 
 function Menu() {
+
   return (
     <Container>
       <div className="menu">
-        <img src={logo} alt="logo" className="logo" />
+        <div className="home">
+          <img
+            src={logo}
+            alt="logo"
+            className="logo"
+          />
+        </div>
         <div className="dropdown-content">
           <li>
             <button className="button">
@@ -57,7 +65,22 @@ function Menu() {
           </li>
         </div>
       </div>
-      <div>project</div>
+      <div className="option">
+        <NavLink to="/" className="home">
+          <i className="fas fa-home fa-lg icon" />
+          <span>Home</span>
+        </NavLink>
+        <div className="subOption">
+          <NavLink to="projects" className="home">
+            <i class="fas fa-tasks fa-lg icon" />
+            <span>Projects</span>
+          </NavLink>
+          <NavLink to="/about" className="home">
+            <i class="fas fa-user icon" />
+            <span>About</span>
+          </NavLink>
+        </div>
+      </div>
     </Container>
   );
 }
@@ -71,6 +94,29 @@ const Container = styled.div`
   margin: 0 3em;
   justify-content: space-between;
   align-items: center;
+
+  .option {
+    font-size: 15px;
+    display: flex;
+    width: 25vw;
+    justify-content: space-between;
+  }
+
+  .subOption{
+    display: flex;
+    width: 11em;
+    justify-content: space-between;
+
+  }
+
+  .icon{
+    color: magenta;
+  }
+  .home{
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 
   .logo {
     background-color: white;

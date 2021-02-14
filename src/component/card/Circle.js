@@ -8,16 +8,16 @@ function Projects() {
       <ul className="chart" />
       <Circle>
         <li>
-          <span>APPRON</span>
+          <span className="appron">APPRON</span>
         </li>
         <li>
-          <span>FIRST DRAFT</span>
+          <span className="firstdraft">FIRST DRAFT</span>
         </li>
         <li>
-          <span>COREDUMP</span>
+          <span className='coredump'>COREDUMP</span>
         </li>
         <li>
-          <span>PEKO-PEKO</span>
+          <span className='pekopeko'>PEKO-PEKO</span>
         </li>
       </Circle>
     </Containers>

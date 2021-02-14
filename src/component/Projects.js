@@ -5,46 +5,31 @@ import styled from "styled-components";
 function Projects() {
   return (
     <Containers>
-      {/* <Circle> */}
       <ul className="chart" />
-      {/* </Circle> */}
-      {/* <List> */}
-      <li>
-        <span>APPRON</span>
-      </li>
-      <li>
-        <span>FIRST DRAFT</span>
-      </li>
-      <li>
-        <span>COREDUMP</span>
-      </li>
-      <li>
-        <span>PEKO-PEKO</span>
-      </li>
-      {/* </List> */}
+      <Circle>
+        <li>
+          <span>APPRON</span>
+        </li>
+        <li>
+          <span>FIRST DRAFT</span>
+        </li>
+        <li>
+          <span>COREDUMP</span>
+        </li>
+        <li>
+          <span>PEKO-PEKO</span>
+        </li>
+      </Circle>
     </Containers>
   );
 }
 
 const Containers = styled.div`
-  // box-sizing: border-box;
-  // display:flex;
-  // justify-content; center;
-  // align-items: center;
-
+  box-sizing: border-box;
   height: 17em;
   width: 17em;
   list-style: none;
 
-  /* RESET STYLES
-  –––––––––––––––––––––––––––––––––––––––––––––––––– */
-  .chart *,
-  .chart::before {
-    box-sizing: border-box;
-  }
-
-  /* CHART-SKILLS STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
   .chart {
     position: relative;
     width: 100px;
@@ -55,15 +40,15 @@ const Containers = styled.div`
 
   .chart::before,
   .chart::after {
+    box-sizing: border-box;
     position: absolute;
   }
 
   .chart::before {
     content: "";
-    // left: 0px;
     width: inherit;
     height: inherit;
-    border: 40px solid rgba(211, 211, 211, 0.3);
+    border: 30px solid rgba(211, 211, 211, 0.3);
     border-right: none;
     border-top-left-radius: 175px;
     border-bottom-left-radius: 175px;
@@ -71,6 +56,7 @@ const Containers = styled.div`
 
   .chart::after {
     content: "Projects";
+    text-shadow: 1px 1px 9px #000000;
     top: 42%;
     right: 10px;
     font-size: 1.1rem;
@@ -80,97 +66,140 @@ const Containers = styled.div`
 
   li {
     position: absolute;
-    top: 36.5%;
-    right: 10.4%;
-    width: 65px;
-    height: 120px;
-    border: 40px solid;
+    left: 100%;
+    width: 70px;
+    height: 140px;
+    border: 30px solid;
     border-left: none;
     border-top-right-radius: 175px;
     border-bottom-right-radius: 175px;
-    transform-origin: 50% 0;
-
-    animation-fill-mode: forwards;
-    animation-duration: 0.4s;
-    animation-timing-function: linear;
+    transform-origin: 0% 50%;
+    animation: 0.4s linear 1 forwards;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
   }
 
-  .chart-skills li:nth-child(1) {
+  li:nth-child(1) {
     z-index: 4;
-    border-color: green;
-    animation-name: rotate-one;
-  }
-
-  .chart-skills li:nth-child(2) {
-    z-index: 3;
     border-color: firebrick;
-    animation-name: rotate-two;
-    animation-delay: 0.4s;
+    animation-name: appron;
+    animation-delay: 0.7s;
   }
 
-  .chart-skills li:nth-child(3) {
-    z-index: 2;
+  li:nth-child(2) {
+    z-index: 3;
     border-color: steelblue;
-    animation-name: rotate-three;
-    animation-delay: 0.8s;
-  }
-
-  .chart-skills li:nth-child(4) {
-    z-index: 1;
-    border-color: orange;
-    animation-name: rotate-four;
+    animation-name: firstdraft;
     animation-delay: 1.2s;
   }
 
-  /* ANIMATIONS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-  @keyframes rotate-one {
-    100% {
-      transform: rotate(21.6deg);
-      /**
-     * 12% => 21.6deg
-     */
-    }
+  li:nth-child(3) {
+    z-index: 2;
+    border-color: orange;
+    animation-name: coredump;
+    animation-delay: 1.7s;
   }
 
-  @keyframes rotate-two {
+  li:nth-child(4) {
+    z-index: 1;
+    border-color: green;
+    animation-name: pekopeko;
+    animation-delay: 2.2s;
+  }
+
+  @keyframes appron {
     0% {
-      transform: rotate(21.6deg);
+      transform: rotate(0deg);
     }
     100% {
-      transform: rotate(79.2deg);
-      /**
-     * 32% => 57.6deg
-     * 57.6 + 21.6 => 79.2deg
-     */
+      transform: rotate(-45deg);
     }
   }
 
-  @keyframes rotate-three {
+  @keyframes firstdraft {
     0% {
-      transform: rotate(79.2deg);
+      transform: rotate(-45deg);
     }
     100% {
-      transform: rotate(140.4deg);
-      /**
-     * 34% => 61.2deg
-     * 61.2 + 79.2 => 140.4deg
-     */
+      transform: rotate(-95deg);
     }
   }
 
-  @keyframes rotate-four {
+  @keyframes coredump {
     0% {
-      transform: rotate(140.4deg);
+      transform: rotate(-95deg);
     }
     100% {
-      transform: rotate(180deg);
-      /**
-     * 22% => 39.6deg
-     * 140.4 + 39.6 => 180deg
-     */
+      transform: rotate(-142deg);
     }
   }
+
+  @keyframes pekopeko {
+    0% {
+      transform: rotate(-142deg);
+    }
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+
+  li:nth-child(1) span {
+    position: absolute;
+    transform: translate(-30px, -80px) rotateZ(45deg);
+
+    backface-visibility: hidden;
+    animation: fade-in 1.3s linear forwards;
+  }
+  li:nth-child(2) span {
+    position: absolute;
+    width: 5em;
+    transform: translate(8px, -82px) rotateZ(97deg);
+
+    backface-visibility: hidden;
+    animation: fade-in 1.8s linear forwards;
+  }
+  li:nth-child(3) span {
+    position: absolute;
+    transform: translate(50px, -65px) rotateZ(142deg);
+
+    backface-visibility: hidden;
+    animation: fade-in 2.2s linear forwards;
+  }
+  li:nth-child(4) span {
+    width: 5em;
+    position: absolute;
+    transform: translate(45px, -42px) rotateZ(180deg);
+
+     backface-visibility: hidden;
+    animation: fade-in 2.8s linear forwards;
+  }
+
+  span {
+    backface-visibility: hidden;
+    animation: fade-in 0.4s linear forwards;
+    text-shadow: 1px 1px 9px #ffffff;
+    letter-spacing: 1px;
+  }
+
+  @keyframes fade-in {
+    0%,
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  // }
 `;
+
+const Circle = styled.div`
+  margin-top: -12.5em;
+  // border: 1px solid white;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 13em;
+  width: 17em;
+  position: fixed;
+`;
+
 export default Projects;

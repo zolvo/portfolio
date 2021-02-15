@@ -13,25 +13,24 @@ const Profile = () => {
           <img src={pic} alt="pic" className="pic" />
         </Pic>
         <Text className="animate__animated animate__zoomIn">
-          <div>Hi there, nice to meet you all,</div>
+          <div>👋 Hi there, nice to meet you all 👋</div>
           <div>
-            I'm a <span> fullstack developer </span>, love to eat Ramen, play
-            RPG and Retro Games,{" "}
+            I'm a <span> fullstack developer </span>, love to eat Ramen 🍜, play
+            RPG 🎮 and Retro Games ✌
             <div>
-              deep interest in
+              🔥 deep interest in
               <span> problem solving </span>, as well as great
-              <span> UI/UX </span>
-              and all the latest <span>technology</span>.
+              <span> UI/UX </span> and all the latest <span>technology</span>.
             </div>
             <div>
-              I speak <span> Chinese, Japanese, Bahasa </span> and{" "}
-              <span> English </span> of course, LOL.
+              I speak <span> Japanese, Chinese, Bahasa </span> and of course
+              <span> English </span>😂
             </div>
             <div>
               Feel free to reach out, Looking forward to connect with you all
             </div>
             <div className="link">
-              <span>
+              <span className="linkedin">
                 <a href="https://www.linkedin.com/in/ronald-regan-palisuan-833451163/">
                   <i
                     className="fab fa-linkedin-in fa-lg"
@@ -39,7 +38,7 @@ const Profile = () => {
                   />
                 </a>
               </span>
-              <span>
+              <span className="twitter">
                 <a href="https://twitter.com/rpalisuan">
                   <i
                     className="fab fa-twitter fa-lg"
@@ -47,7 +46,7 @@ const Profile = () => {
                   />
                 </a>
               </span>
-              <span>
+              <span className="github">
                 <a href="http://github.com/zolvo">
                   <i
                     className="fab fa-github fa-lg"
@@ -136,17 +135,23 @@ const Text = styled.div`
     font-weight: 600;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 9px #be18be;
+    // text-shadow: 1px 1px 9px #FFFFFF;
     text-transform: uppercase;
   }
 
   .link {
-    // margin-top: 1em;
+    margin-top: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
 
     a {
       padding: 1em;
+    }
+
+    :hover {
+      transform: scale(1.1);
+      transition: transform 1s linear;
     }
   }
 `;

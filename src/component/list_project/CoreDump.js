@@ -7,13 +7,15 @@ function CoreDump() {
     <Container>
       <Image />
       <Title>
-        <a href="https://aa-coredump.herokuapp.com/">
-          <i className="fas fa-wifi fa-xs icon" />
-        </a>
-        <span>Core Dump</span>
-        <a href="https://github.com/mjshuff23/coredump-project">
-          <i className="fab fa-github fa-sm icon" />
-        </a>
+        <div className="front">
+          <a href="https://aa-coredump.herokuapp.com/">
+            <i className="fas fa-wifi fa-lg icon" />
+          </a>
+          <span>CoreDump</span>
+          <a href="https://github.com/mjshuff23/coredump-project">
+            <i className="fab fa-github fa-lg icon" />
+          </a>
+        </div>
       </Title>
     </Container>
   );
@@ -45,20 +47,30 @@ const Image = styled.div`
 const Title = styled.div`
   box-sizing: border-box;
   display: flex;
-  width: 8em;
+  width: 100%;
   justify-content: center;
   align-items: center;
-
-  margin-top: -3em;
+  margin-top: -3.75em;
   box-sizing: border-box;
   text-align: center;
-  background-color: grey;
-  position: absolute;
-  padding: 0 0.5em;
 
   .icon {
+    padding: 3px;
+    border-radius: 50%;
+    // background: black;
+    opacity: 0.8;
     color: magenta;
-    text-shadow: 1px 1px 9px #000000;
+    text-shadow: 2px 2px 6px #000000;
+  }
+
+  .front {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
+    z-index: 5;
+    padding: 0.5em 0;
   }
 
   span {

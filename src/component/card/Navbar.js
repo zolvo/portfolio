@@ -107,6 +107,7 @@ const Container = styled.div`
   .icon{
     color: magenta;
   }
+
   .home{
     text-decoration: none;
     letter-spacing: 2px;
@@ -244,6 +245,12 @@ const Container = styled.div`
 
   span{
     text-shadow: 1px 1px 6px #ffffff;
+
+    :hover{
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
   }
   `;
 

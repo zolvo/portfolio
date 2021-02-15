@@ -1,24 +1,112 @@
 import React from "react";
 import styled from "styled-components";
-// import Chart from "chart.js";
+import Modal from "react-modal";
+import { useState } from "react";
+import Appron from "../list_project/Appron";
+import FirstDraft from "../list_project/FirstDraft";
+import CoreDump from "../list_project/CoreDump";
+import PekoPeko from "../list_project/PekoPeko";
+
+const customStyles = {
+  overlay: {
+    background: "rgba(0, 0, 0, 0.7)",
+    transform: "scaleY(.01) scaleX(0)",
+    animation: "unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards",
+  },
+
+  content: {
+    borderRadius: "5em",
+    overflow: "hidden",
+    cursor: "pointer",
+    width: "28em",
+    height: "50%",
+    top: "50%",
+    left: "53%",
+    right: "auto",
+    bottom: "auto",
+    background: "none",
+    border: "none",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 function Projects() {
+  const [showModal1, setShowModal1] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
+  const [showModal3, setShowModal3] = useState(false);
+  const [showModal4, setShowModal4] = useState(false);
+
+  const closeModal = () => {
+    setShowModal1(false);
+    setShowModal2(false);
+    setShowModal3(false);
+    setShowModal4(false);
+  };
+
   return (
     <Containers>
       <ul className="chart" />
       <Circle>
         <li>
-          <span className="appron">APPRON</span>
+          <span
+            className="appron modal"
+            onClick={() => setShowModal1(!showModal1)}
+          >
+            APPRON
+          </span>
+          <Modal
+            isOpen={showModal1}
+            onRequestClose={closeModal}
+            style={customStyles}
+          >
+            <Appron />
+          </Modal>
         </li>
         <li>
-          <span className="firstdraft">FIRST DRAFT</span>
+          <span
+            className="firstdraft modal"
+            onClick={() => setShowModal2(!showModal2)}
+          >
+            FIRST DRAFT
+          </span>
+          <Modal
+            isOpen={showModal2}
+            onRequestClose={closeModal}
+            style={customStyles}
+          >
+            <FirstDraft />
+          </Modal>
         </li>
         <li>
-          <span className='coredump'>COREDUMP</span>
+          <span
+            className="coredump modal"
+            onClick={() => setShowModal3(!showModal3)}
+          >
+            COREDUMP
+          </span>
+          <Modal
+            isOpen={showModal3}
+            onRequestClose={closeModal}
+            style={customStyles}
+          >
+            <CoreDump />
+          </Modal>
         </li>
         <li>
-          <span className='pekopeko'>PEKO-PEKO</span>
+          <span
+            className="pekopeko modal"
+            onClick={() => setShowModal4(!showModal4)}
+          >
+            PEKO-PEKO
+          </span>
         </li>
+        <Modal
+          isOpen={showModal4}
+          onRequestClose={closeModal}
+          style={customStyles}
+        >
+          <PekoPeko />
+        </Modal>
       </Circle>
     </Containers>
   );
@@ -36,6 +124,55 @@ const Containers = styled.div`
     height: 200px;
     margin-top: 5.5em;
     margin-left: 8.3em;
+  }
+
+
+  .one {
+    transform:scaleY(.01) scaleX(0);
+    animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    .modal-background {
+      .modal {
+        transform:scale(0);
+        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      }
+    }
+    .out {
+      transform:scale(1);
+      animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+      .modal-background {
+        .modal {
+          animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        }
+      }
+    }
+  }
+
+@keyframes unfoldIn {
+  0% {
+    transform:scaleY(.005) scaleX(0);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(1) scaleX(1);
+  }
+}
+
+@keyframes unfoldOut {
+  0% {
+    transform:scaleY(1) scaleX(1);
+  }
+  50% {
+    transform:scaleY(.005) scaleX(1);
+  }
+  100% {
+    transform:scaleY(.005) scaleX(0);
+  }
+}
+
+.modal {
+cursor: pointer;
   }
 
   .chart::before,

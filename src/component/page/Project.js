@@ -69,7 +69,6 @@ li{
     box-sizing-border-box;
     width: 8em;
     height: 12em;
-    // border: 1px solid white;
     border-radius: 0.4em;
 
 }

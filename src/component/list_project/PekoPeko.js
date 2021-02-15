@@ -7,13 +7,15 @@ function PekoPeko() {
     <Container>
       <Image />
       <Title>
-        <a href="https://main.d2fp27heurb617.amplifyapp.com/">
-          <i className="fas fa-wifi fa-xs icon" />
-        </a>
-        Peko-Peko
-        <a href="https://github.com/zolvo/pekoPeko-frontend">
-          <i className="fab fa-github fa-sm icon" />
-        </a>
+        <div className="front">
+          <a href="https://main.d2fp27heurb617.amplifyapp.com/">
+            <i className="fas fa-wifi fa-lg icon" />
+          </a>
+          PekoPeko
+          <a href="https://github.com/zolvo/pekoPeko-frontend">
+            <i className="fab fa-github fa-lg icon" />
+          </a>
+        </div>
       </Title>
       <div className="comingsoon">Coming Soon</div>
     </Container>
@@ -29,7 +31,7 @@ const Container = styled.div`
   .comingsoon {
     position: absolute;
     margin-left: 3em;
-    margin-top: 1em;
+    margin-top: 4.5em;
     font-size: 13px;
   }
 `;
@@ -53,19 +55,35 @@ const Image = styled.div`
 const Title = styled.div`
   box-sizing: border-box;
   display: flex;
-  width: 8em;
+  width: 100%;
   justify-content: center;
   align-items: center;
 
-  margin-top: -3em;
+  margin-top: -3.75em;
   box-sizing: border-box;
   text-align: center;
-  background-color: grey;
-  position: absolute;
 
   .icon {
+    padding: 3px;
+    border-radius: 50%;
+    // background: black;
+    opacity: 0.8;
     color: magenta;
-    text-shadow: 1px 1px 9px #000000;
+    text-shadow: 2px 2px 6px #000000;
+  }
+
+  .front {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
+    z-index: 5;
+    padding: 0.5em 0;
+  }
+
+  span {
+    padding: 0 0.5em;
   }
 `;
 

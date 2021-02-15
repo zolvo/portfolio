@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styled from "styled-components";
 import Menu from "./component/card/Navbar";
-import About from "./component/page/About";
+import Profile from "./component/page/Profile";
 import Home from "./component/page/Home";
 import Project from "./component/page/Project";
 
@@ -17,8 +17,8 @@ function App() {
               <Route exact path="/projects">
                 <Project />
               </Route>
-              <Route exact path="/about">
-                <About />
+              <Route exact path="/profile">
+                <Profile />
               </Route>
               <Route exact path="/">
                 <Home />

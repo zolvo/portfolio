@@ -4,16 +4,11 @@ import styled from "styled-components";
 import logo from "../../asset/logo.png";
 
 function Menu() {
-
   return (
     <Container>
       <div className="menu">
         <div className="home">
-          <img
-            src={logo}
-            alt="logo"
-            className="logo"
-          />
+          <img src={logo} alt="logo" className="logo" />
         </div>
         <div className="dropdown-content">
           <li>
@@ -75,9 +70,9 @@ function Menu() {
             <i class="fas fa-tasks fa-lg icon" />
             <span>Projects</span>
           </NavLink>
-          <NavLink to="/about" className="home">
+          <NavLink to="/profile" className="home">
             <i class="fas fa-user icon" />
-            <span>About</span>
+            <span>Profile</span>
           </NavLink>
         </div>
       </div>
@@ -96,7 +91,7 @@ const Container = styled.div`
   align-items: center;
 
   .option {
-    font-size: 15px;
+    font-size: 14px;
     display: flex;
     width: 25vw;
     justify-content: space-between;
@@ -104,7 +99,7 @@ const Container = styled.div`
 
   .subOption{
     display: flex;
-    width: 11em;
+    width: 12em;
     justify-content: space-between;
 
   }
@@ -245,6 +240,10 @@ const Container = styled.div`
     outline: none;
     background-color: transparent;
     border-readius: 50%;
+  }
+
+  span{
+    text-shadow: 1px 1px 6px #ffffff;
   }
   `;
 

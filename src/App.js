@@ -5,11 +5,16 @@ import Menu from "./component/card/Navbar";
 import Profile from "./component/page/Profile";
 import Home from "./component/page/Home";
 import Project from "./component/page/Project";
+import test from "./video/test.mp4";
+import Footer from "./component/page/Footer";
 
 function App() {
   return (
     <BrowserRouter>
       <Container>
+        <video autoPlay loop muted className="video1">
+          <source src={test} type="video/mp4" />
+        </video>
         <Background>
           <Card>
             <Menu />
@@ -25,6 +30,7 @@ function App() {
               </Route>
             </Switch>
           </Card>
+          <Footer/>
         </Background>
       </Container>
     </BrowserRouter>
@@ -42,6 +48,15 @@ const Container = styled.div`
     rgba(128, 128, 128, 0.5),
     rgba(0, 0, 0, 0.8)
   );
+
+  .video1 {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -90;
+  }
 `;
 
 const Background = styled.div`

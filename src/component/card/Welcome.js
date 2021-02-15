@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import pic from "../../asset/pic.jpg";
+import P1 from "../../asset/P1.jpg";
 
 function Profile() {
   return (
@@ -11,7 +11,7 @@ function Profile() {
         </div>
         <div>
           <img
-            src={pic}
+            src={P1}
             alt="pic"
             className="pic animate__animated animate__fadeInDown"
           />
@@ -41,7 +41,6 @@ const Container = styled.div`
   .title {
     font-size: 30px;
     font-weight: bold;
-
     span {
       color: magenta;
     }
@@ -65,6 +64,7 @@ const Container = styled.div`
   }
 
   .middle {
+    text-shadow: 1px 1px 9px #ffffff;
     margin-top: 3em;
     letter-spacing: 2px;
     font-size: 20px;

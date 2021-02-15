@@ -6,15 +6,15 @@ import Welcome from "../card/Welcome";
 
 function Home() {
   return (
-          <div>
-              <Main>
-                <Welcome />
-                <Circle />
-              </Main>
-              <LogoBox>
-                <LogoBig/>
-              </LogoBox>
-          </div>
+    <div>
+      <Main>
+        <Welcome />
+        <Circle />
+      </Main>
+      <LogoBox>
+        <LogoBig />
+      </LogoBox>
+    </div>
   );
 }
 

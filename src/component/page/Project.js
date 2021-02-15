@@ -13,16 +13,16 @@ function Project() {
           Project List
         </div>
         <List>
-          <li>
+          <li className="animate__animated animate__fadeIn">
             <Appron />
           </li>
-          <li>
+          <li className="animate__animated animate__fadeIn">
             <FirstDraft />
           </li>
-          <li>
+          <li className="animate__animated animate__fadeIn">
             <CoreDump />
           </li>
-          <li>
+          <li className="animate__animated animate__fadeIn">
             <PekoPeko />
           </li>
         </List>
@@ -39,6 +39,10 @@ const Container = styled.div`
 
   .head {
     text-shadow: 1px 1px 9px #000000;
+  }
+
+  .tail {
+    animate-duration: 0.9s;
   }
 `;
 

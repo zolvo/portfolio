@@ -18,10 +18,10 @@ const customStyles = {
     borderRadius: "5em",
     overflow: "hidden",
     cursor: "pointer",
-    width: "28em",
+    width: "21em",
     height: "50%",
     top: "50%",
-    left: "53%",
+    left: "55%",
     right: "auto",
     bottom: "auto",
     background: "none",
@@ -59,6 +59,10 @@ function Projects() {
             onRequestClose={closeModal}
             style={customStyles}
           >
+            <div style={{ marginBottom: "0.3em" }}>
+              Chef on demand app, inspired by a chef friend himself, user can
+              search for a chef, make an appointment, comment, & star rating.
+            </div>
             <Appron />
           </Modal>
         </li>
@@ -74,6 +78,10 @@ function Projects() {
             onRequestClose={closeModal}
             style={customStyles}
           >
+            <div style={{ marginBottom: "0.3em" }}>
+              Clone app Insipired by Medium itself, allow user to create story,
+              comment, likes, and posting pictures with WYSWYG input text.
+            </div>
             <FirstDraft />
           </Modal>
         </li>
@@ -89,6 +97,10 @@ function Projects() {
             onRequestClose={closeModal}
             style={customStyles}
           >
+            <div style={{ marginBottom: "0.3em" }}>
+              StactOverFlow clone, user was able to create a question, answer a
+              question, edit & delete, also could choose avatar & able to vote
+            </div>
             <CoreDump />
           </Modal>
         </li>
@@ -105,6 +117,10 @@ function Projects() {
           onRequestClose={closeModal}
           style={customStyles}
         >
+          <div style={{ marginBottom: "0.3em" }}>
+            Yelp clone app with a twist, suggest user with meal category to make
+            it easier to pick without spending time with the seaching.
+          </div>
           <PekoPeko />
         </Modal>
       </Circle>

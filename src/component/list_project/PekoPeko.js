@@ -59,7 +59,7 @@ const Title = styled.div`
   justify-content: center;
   align-items: center;
 
-  margin-top: -3.75em;
+  margin-top: -4em;
   box-sizing: border-box;
   text-align: center;
 

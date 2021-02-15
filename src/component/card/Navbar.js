@@ -93,15 +93,15 @@ const Container = styled.div`
   .option {
     font-size: 14px;
     display: flex;
-    width: 25vw;
+    width: 26vw;
     justify-content: space-between;
   }
 
   .subOption{
     display: flex;
-    width: 12em;
+    width: 16em;
     justify-content: space-between;
-
+    margin-right:2em;
   }
 
   .icon{

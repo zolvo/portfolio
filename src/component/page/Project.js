@@ -9,7 +9,9 @@ function Project() {
   return (
     <Container>
       <Title>
-        Project List
+        <div className="head animate__animated animate__fadeInDown">
+          Project List
+        </div>
         <List>
           <li>
             <Appron />
@@ -34,6 +36,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .head {
+    text-shadow: 1px 1px 9px #000000;
+  }
 `;
 
 const Title = styled.div`

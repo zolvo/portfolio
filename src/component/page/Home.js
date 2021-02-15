@@ -12,7 +12,7 @@ function Home() {
                 <Circle />
               </Main>
               <LogoBox>
-                <LogoBig />
+                <LogoBig/>
               </LogoBox>
           </div>
   );

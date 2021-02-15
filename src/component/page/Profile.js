@@ -5,12 +5,59 @@ import pic from "../../asset/pic.jpg";
 const Profile = () => {
   return (
     <Container>
-      <Title>Ronald's Profile</Title>
+      <Title className="animate__animated animate__fadeInDown">
+        Ronald's Profile
+      </Title>
       <Main>
         <Pic>
           <img src={pic} alt="pic" className="pic" />
         </Pic>
-        <Text>Hi there, nice to meet you all</Text>
+        <Text className="animate__animated animate__zoomIn">
+          <div>Hi there, nice to meet you all,</div>
+          <div>
+            I'm a <span> fullstack developer </span>, love to eat Ramen, play
+            RPG and Retro Games,{" "}
+            <div>
+              deep interest in
+              <span> problem solving </span>, as well as great
+              <span> UI/UX </span>
+              and all the latest <span>technology</span>.
+            </div>
+            <div>
+              I speak <span> Chinese, Japanese, Bahasa </span> and{" "}
+              <span> English </span> of course, LOL.
+            </div>
+            <div>
+              Feel free to reach out, Looking forward to connect with you all
+            </div>
+            <div className="link">
+              <span>
+                <a href="https://www.linkedin.com/in/ronald-regan-palisuan-833451163/">
+                  <i
+                    className="fab fa-linkedin-in fa-lg"
+                    style={{ backgroundColor: "magenta", borderRadius: "50%" }}
+                  />
+                </a>
+              </span>
+              <span>
+                <a href="https://twitter.com/rpalisuan">
+                  <i
+                    className="fab fa-twitter fa-lg"
+                    style={{ backgroundColor: "magenta", borderRadius: "50%" }}
+                  />
+                </a>
+              </span>
+              <span>
+                <a href="http://github.com/zolvo">
+                  <i
+                    className="fab fa-github fa-lg"
+                    style={{ backgroundColor: "magenta", borderRadius: "50%" }}
+                  />
+                </a>
+              </span>
+            </div>
+          </div>
+        </Text>
       </Main>
     </Container>
   );
@@ -72,8 +119,36 @@ const Pic = styled.div`
 `;
 
 const Text = styled.div`
+  box-sizing: border-box;
+  width: 63vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   position: absolute;
   margin-top: 10em;
+  padding: 1em;
+
+  span {
+    color: magenta;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 9px #be18be;
+    text-transform: uppercase;
+  }
+
+  .link {
+    // margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      padding: 1em;
+    }
+  }
 `;
 
 export default Profile;

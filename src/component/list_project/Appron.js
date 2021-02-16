@@ -58,10 +58,13 @@ const Title = styled.div`
   .icon {
     padding: 3px;
     border-radius: 50%;
-    // background: black;
     opacity: 0.8;
     color: magenta;
     text-shadow: 2px 2px 6px #000000;
+
+    :hover {
+      text-shadow: 2px 2px 6px #ffffff;
+    }
   }
 
   .front {
@@ -77,7 +80,6 @@ const Title = styled.div`
   span {
     padding: 0 0.5em;
   }
-
 `;
 
 export default Appron;

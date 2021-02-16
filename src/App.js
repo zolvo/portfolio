@@ -7,6 +7,7 @@ import Home from "./component/page/Home";
 import Project from "./component/page/Project";
 import test from "./video/test.mp4";
 import Footer from "./component/page/Footer";
+import Lost404 from "./component/page/Lost404";
 
 function App() {
   return (
@@ -28,9 +29,12 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
+              <Route exact path="/*">
+                <Lost404 />
+              </Route>
             </Switch>
           </Card>
-          <Footer/>
+          <Footer />
         </Background>
       </Container>
     </BrowserRouter>

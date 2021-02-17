@@ -215,6 +215,7 @@ cursor: pointer;
     font-size: 1.1rem;
     font-weight: bold;
     color: cadetblue;
+
   }
 
   li {
@@ -353,6 +354,30 @@ const Circle = styled.div`
   height: 13em;
   width: 17em;
   position: fixed;
+
+  .appron {
+    :hover {
+      font-weight: 600;
+    }
+  }
+
+  .firstdraft {
+    :hover {
+      font-weight: 600;
+    }
+  }
+
+  .coredump {
+    :hover {
+      font-weight: 600;
+    }
+  }
+
+  .pekopeko {
+    :hover {
+      font-weight: 600;
+    }
+  }
 `;
 
 export default Projects;

@@ -16,7 +16,7 @@ function Footer() {
           />
         </a>
       </span>
-      Created by: Ronald Regan Paisuan @2021
+      Created by: Ronald Regan Palisuan @2021
       <span>
         <a href="https://www.linkedin.com/in/ronald-regan-palisuan-833451163/">
           <i

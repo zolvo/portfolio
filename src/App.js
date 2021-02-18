@@ -26,11 +26,11 @@ function App() {
               <Route exact path="/profile">
                 <Profile />
               </Route>
-              <Route exact path="/">
-                <Home />
-              </Route>
               <Route exact path="/*">
                 <Lost404 />
+              </Route>
+              <Route exact path="/">
+                <Home />
               </Route>
             </Switch>
           </Card>

@@ -130,8 +130,8 @@ function Projects() {
 
 const Containers = styled.div`
   box-sizing: border-box;
-  height: 17em;
-  width: 17em;
+  // height: 17em;
+  // width: 17em;
   list-style: none;
 
   .chart {
@@ -139,7 +139,7 @@ const Containers = styled.div`
     width: 100px;
     height: 200px;
     margin-top: 5.5em;
-    margin-left: 8.3em;
+    // margin-left: 8.3em;
   }
 
 
@@ -220,6 +220,7 @@ cursor: pointer;
 
   li {
     position: absolute;
+    // left: 100%;
     left: 100%;
     width: 70px;
     height: 140px;
@@ -354,6 +355,7 @@ const Circle = styled.div`
   height: 13em;
   width: 17em;
   position: fixed;
+  margin-left: -8.25em;
 
   .appron {
     :hover {

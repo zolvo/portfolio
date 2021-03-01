@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import P1 from "../../asset/P1.jpg";
+import avatar from "../../asset/avatar.jpg";
 
 function Profile() {
   return (
@@ -11,7 +11,7 @@ function Profile() {
         </div>
         <div>
           <img
-            src={P1}
+            src={avatar}
             alt="pic"
             className="pic animate__animated animate__fadeInDown"
           />

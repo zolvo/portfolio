@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Circle from "../card/Circle";
+import Icons from "../card/Icons";
 import LogoBig from "../card/LogoBig";
 import Welcome from "../card/Welcome";
 
@@ -9,6 +10,7 @@ function Home() {
     <div>
       <Main>
         <Welcome />
+        {/* <Icons /> */}
         <Circle />
       </Main>
       <LogoBox>
@@ -26,7 +28,7 @@ const Main = styled.div`
   // height: 60vh;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 `;
 
 const LogoBox = styled.div`

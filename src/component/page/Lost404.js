@@ -15,7 +15,8 @@ const Lost404 = () => {
 };
 
 const Container = styled.div`
-  height: 16.85em;
+  // height: 16.85em;
+  height: 17.45em;
   text-transform: uppercase;
   font-size: 28px;
   font-weight: 600;

@@ -10,7 +10,7 @@ function Home() {
     <div>
       <Main>
         <Welcome />
-        {/* <Icons /> */}
+        <Icons />
         <Circle />
       </Main>
       <LogoBox>

@@ -67,7 +67,7 @@ display: flex;
 flex-direction: row;
 box - sizing: border-box;
 margin-top: 3em;
-margin-bottom: 5.23em;
+margin-bottom: 6.05em;
 
 li{
     box-sizing-border-box;

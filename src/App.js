@@ -61,7 +61,7 @@ const Container = styled.div`
     position: absolute;
     z-index: -90;
   }
-`;
+ `;
 
 const Background = styled.div`
   display: flex;

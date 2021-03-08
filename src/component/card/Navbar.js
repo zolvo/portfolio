@@ -4,6 +4,8 @@ import styled from "styled-components";
 import logo from "../../asset/logo.png";
 
 function Menu() {
+
+
   return (
     <Container>
       <div className="menu">
@@ -67,6 +69,10 @@ function Menu() {
         </NavLink>
         <div className="subOption">
           <NavLink to="projects" className="home">
+            <i class="fas fa-check-square fa-lg icon" />
+            <span>Skills</span>
+            </NavLink>
+          <NavLink to="projects" className="home">
             <i class="fas fa-tasks fa-lg icon" />
             <span>Projects</span>
           </NavLink>
@@ -93,15 +99,15 @@ const Container = styled.div`
   .option {
     font-size: 14px;
     display: flex;
-    width: 26vw;
+    width: 30.5vw;
     justify-content: space-between;
+    padding-right:2em;
   }
 
   .subOption{
     display: flex;
-    width: 16em;
+    width: 16.5em;
     justify-content: space-between;
-    margin-right:2em;
   }
 
   .icon{

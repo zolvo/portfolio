@@ -83,7 +83,7 @@ const Title = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
+  margin-top: 1em;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
@@ -94,13 +94,13 @@ const Title = styled.div`
 
 const Main = styled.div`
 box-sizing: border-box;
-width: 63vw;
+// width: 63vw;
 list-style: none;
 justify-content: space-evenly;
 display: flex;
 flex-direction: row;
 box - sizing: border-box;
-margin-top: 3em;
+margin-top: 5.3em;
 `;
 
 const Pic = styled.div`

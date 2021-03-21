@@ -5,6 +5,7 @@ import Menu from "./component/card/Navbar";
 import Profile from "./component/page/Profile";
 import Home from "./component/page/Home";
 import Project from "./component/page/Project";
+import Skills from "./component/page/Skills";
 import test from "./video/test.mp4";
 import Footer from "./component/page/Footer";
 import Lost404 from "./component/page/Lost404";
@@ -20,6 +21,9 @@ function App() {
           <Card>
             <Menu />
             <Switch>
+              <Route exact path="/skills">
+                <Skills />
+              </Route>
               <Route exact path="/projects">
                 <Project />
               </Route>
@@ -61,7 +65,7 @@ const Container = styled.div`
     position: absolute;
     z-index: -90;
   }
- `;
+`;
 
 const Background = styled.div`
   display: flex;

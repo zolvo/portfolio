@@ -56,6 +56,7 @@ function Projects() {
           </span>
           <Modal
             isOpen={showModal1}
+            ariaHideApp={false}
             onRequestClose={closeModal}
             style={customStyles}
           >
@@ -75,6 +76,7 @@ function Projects() {
           </span>
           <Modal
             isOpen={showModal2}
+            ariaHideApp={false}
             onRequestClose={closeModal}
             style={customStyles}
           >
@@ -94,6 +96,7 @@ function Projects() {
           </span>
           <Modal
             isOpen={showModal3}
+            ariaHideApp={false}
             onRequestClose={closeModal}
             style={customStyles}
           >
@@ -114,6 +117,7 @@ function Projects() {
         </li>
         <Modal
           isOpen={showModal4}
+          ariaHideApp={false}
           onRequestClose={closeModal}
           style={customStyles}
         >
@@ -143,25 +147,25 @@ const Containers = styled.div`
   }
 
 
-  .one {
-    transform:scaleY(.01) scaleX(0);
-    animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-    .modal-background {
-      .modal {
-        transform:scale(0);
-        animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-      }
-    }
-    .out {
-      transform:scale(1);
-      animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-      .modal-background {
-        .modal {
-          animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
-        }
-      }
-    }
-  }
+  // .one {
+  //   transform:scaleY(.01) scaleX(0);
+  //   animation:unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  //   .modal-background {
+  //     .modal {
+  //       transform:scale(0);
+  //       animation: zoomIn .5s .8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  //     }
+  //   }
+  //   .out {
+  //     transform:scale(1);
+  //     animation:unfoldOut 1s .3s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  //     .modal-background {
+  //       .modal {
+  //         animation: zoomOut .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+  //       }
+  //     }
+  //   }
+  // }
 
 @keyframes unfoldIn {
   0% {

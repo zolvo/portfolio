@@ -1,10 +1,41 @@
 import React from "react";
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Modal from "react-modal";
 import styled from "styled-components";
 import logo from "../../asset/logo.png";
+import Skills from "../page/Skills";
+
+const customStyles = {
+  overlay: {
+    background: "rgba(0, 0, 0, 0.7)",
+    transform: "scaleY(.01) scaleX(0)",
+    animation: "unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards",
+  },
+
+  content: {
+    borderRadius: "1em",
+    overflow: "hidden",
+    cursor: "pointer",
+    width: "33em",
+    height: "50%",
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    background: "204, 204, 255",
+    // opacity: "0.6",
+    border: "none",
+    transform: "translate(-50%, -50%)",
+  },
+};
 
 function Menu() {
+  const [showModal, setShowModal] = useState(false);
 
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
   return (
     <Container>
@@ -68,16 +99,24 @@ function Menu() {
           <span>Home</span>
         </NavLink>
         <div className="subOption">
+          <div className="icon2" onClick={() => setShowModal(!showModal)}>
+            <i className="fas fa-check-square fa-lg icon" />
+            <span className="home">Skills</span>
+            <Modal
+              isOpen={showModal}
+              ariaHideApp={false}
+              onRequestClose={closeModal}
+              style={customStyles}
+            >
+              <Skills />
+            </Modal>
+          </div>
           <NavLink to="projects" className="home">
-            <i class="fas fa-check-square fa-lg icon" />
-            <span>Skills</span>
-            </NavLink>
-          <NavLink to="projects" className="home">
-            <i class="fas fa-tasks fa-lg icon" />
+            <i className="fas fa-tasks fa-lg icon" />
             <span>Projects</span>
           </NavLink>
           <NavLink to="/profile" className="home">
-            <i class="fas fa-user icon" />
+            <i className="fas fa-user icon" />
             <span>Profile</span>
           </NavLink>
         </div>
@@ -112,6 +151,10 @@ const Container = styled.div`
 
   .icon{
     color: magenta;
+  }
+
+  .icon2 {
+    cursor: pointer;
   }
 
   .home{

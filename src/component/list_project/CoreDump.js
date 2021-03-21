@@ -35,7 +35,7 @@ const Image = styled.div`
   background-image: url(${coredump});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 59.5% top;
+  background-position: 62% top;
   border-radius: 0.3em;
 
   :hover {

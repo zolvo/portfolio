@@ -18,10 +18,11 @@ const customStyles = {
     borderRadius: "5em",
     overflow: "hidden",
     cursor: "pointer",
-    width: "21em",
-    height: "50%",
-    top: "50%",
-    left: "55%",
+    width: "26em",
+    // height: "50%",
+    height: "28em",
+    top: "51%",
+    left: "50%",
     right: "auto",
     bottom: "auto",
     background: "none",
@@ -60,7 +61,7 @@ function Projects() {
             onRequestClose={closeModal}
             style={customStyles}
           >
-            <div style={{ marginBottom: "0.3em" }}>
+            <div style={{ marginBottom: "0.3em", textAlign: "center" }}>
               Chef on demand app, inspired by a chef friend himself, user can
               search for a chef, make an appointment, comment, & star rating.
             </div>
@@ -80,7 +81,7 @@ function Projects() {
             onRequestClose={closeModal}
             style={customStyles}
           >
-            <div style={{ marginBottom: "0.3em" }}>
+            <div style={{ marginBottom: "0.3em", textAlign: "center" }}>
               Clone app Insipired by Medium itself, allow user to create story,
               comment, likes, and posting pictures with WYSWYG input text.
             </div>
@@ -100,7 +101,7 @@ function Projects() {
             onRequestClose={closeModal}
             style={customStyles}
           >
-            <div style={{ marginBottom: "0.3em" }}>
+            <div style={{ marginBottom: "0.3em", textAlign: "center" }}>
               StactOverFlow clone, user was able to create a question, answer a
               question, edit & delete, also could choose avatar & able to vote
             </div>
@@ -121,7 +122,7 @@ function Projects() {
           onRequestClose={closeModal}
           style={customStyles}
         >
-          <div style={{ marginBottom: "0.3em" }}>
+          <div style={{ marginBottom: "0.3em", textAlign: "center" }}>
             Yelp clone app with a twist, suggest user with meal category to make
             it easier to pick without spending time with the seaching.
           </div>

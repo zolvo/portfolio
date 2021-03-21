@@ -8,11 +8,11 @@ function CoreDump() {
       <Image />
       <Title>
         <div className="front">
-          <a href="https://aa-coredump.herokuapp.com/">
+          <a href="https://coredump-app.herokuapp.com/">
             <i className="fas fa-wifi fa-lg icon" />
           </a>
           <span>CoreDump</span>
-          <a href="https://github.com/mjshuff23/coredump-project">
+          <a href="https://github.com/zolvo/coredump">
             <i className="fab fa-github fa-lg icon" />
           </a>
         </div>
@@ -35,7 +35,7 @@ const Image = styled.div`
   background-image: url(${coredump});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 62% top;
+  background-position: 60% top;
   border-radius: 0.3em;
 
   :hover {

@@ -54,7 +54,7 @@ function Menu() {
           </li>
           <li>
             <button className="button">
-              <a href="https://www.linkedin.com/in/ronald-regan-palisuan-833451163/">
+              <a href="https://www.linkedin.com/in/ronaldpalisuan/">
                 <i
                   className="fab fa-linkedin-in fa-lg"
                   style={{ color: "black" }}

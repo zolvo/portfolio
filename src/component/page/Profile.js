@@ -31,7 +31,7 @@ const Profile = () => {
             </div>
             <div className="link">
               <span className="linkedin">
-                <a href="https://www.linkedin.com/in/ronald-regan-palisuan-833451163/">
+                <a href="https://www.linkedin.com/in/ronaldpalisuan/">
                   <i
                     className="fab fa-linkedin-in fa-lg"
                     style={{ backgroundColor: "magenta", borderRadius: "50%" }}
